@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Banknote Recognizer View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BanknoteRecognizerViewController" customModule="BanknoteRecognizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dFn-ny-SId">
+                                <rect key="frame" x="0.0" y="-20" width="375" height="412"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVB-kV-Iyg" userLabel="Background View">
+                                <rect key="frame" x="0.0" y="392" width="375" height="275"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤷🏻‍♀️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Cu-QG-v8L">
+                                        <rect key="frame" x="147.5" y="91" width="80" height="93"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="80"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0Cu-QG-v8L" firstAttribute="centerY" secondItem="OVB-kV-Iyg" secondAttribute="centerY" id="VvJ-DW-tkh"/>
+                                    <constraint firstItem="0Cu-QG-v8L" firstAttribute="centerX" secondItem="OVB-kV-Iyg" secondAttribute="centerX" id="twk-WC-Irf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="dFn-ny-SId" firstAttribute="height" secondItem="OVB-kV-Iyg" secondAttribute="height" multiplier="1.5" id="5oI-YC-3Yk"/>
+                            <constraint firstItem="dFn-ny-SId" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="8Fj-bu-kgq"/>
+                            <constraint firstItem="OVB-kV-Iyg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IN1-0F-lqK"/>
+                            <constraint firstItem="dFn-ny-SId" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="ITl-Hn-wby"/>
+                            <constraint firstItem="OVB-kV-Iyg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N6B-sR-gER"/>
+                            <constraint firstItem="OVB-kV-Iyg" firstAttribute="top" secondItem="dFn-ny-SId" secondAttribute="bottom" id="Oew-q0-yWv"/>
+                            <constraint firstItem="dFn-ny-SId" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hIC-X8-Juy"/>
+                            <constraint firstItem="OVB-kV-Iyg" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="oPQ-hC-g87"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraImageView" destination="dFn-ny-SId" id="7Jm-kn-T9q"/>
+                        <outlet property="classifierLabel" destination="0Cu-QG-v8L" id="25T-VQ-Wbv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
