@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69D1C853243F06610019B275 /* WeAR_TShirt.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 69D1C852243F06600019B275 /* WeAR_TShirt.mlmodel */; };
+		691E7BE9244EDBB900FB4DFD /* WeAR_Azure.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 691E7BE8244EDBB900FB4DFD /* WeAR_Azure.mlmodel */; };
+		69AE70D42453EDAC00928C9E /* Scott2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 69AE70D32453EDAC00928C9E /* Scott2.mlmodel */; };
+		69D1C853243F06610019B275 /* WeAR_TShirtCoreML.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 69D1C852243F06600019B275 /* WeAR_TShirtCoreML.mlmodel */; };
 		69F7278922743FD4005BD8F5 /* BanknoteClassifier2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 69F7278822743FD4005BD8F5 /* BanknoteClassifier2.mlmodel */; };
 		F4FB444D21A7923100939357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB444C21A7923100939357 /* AppDelegate.swift */; };
 		F4FB445221A7923100939357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4FB445021A7923100939357 /* Main.storyboard */; };
@@ -17,7 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		69D1C852243F06600019B275 /* WeAR_TShirt.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WeAR_TShirt.mlmodel; sourceTree = "<group>"; };
+		691E7BE8244EDBB900FB4DFD /* WeAR_Azure.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WeAR_Azure.mlmodel; sourceTree = "<group>"; };
+		69AE70D32453EDAC00928C9E /* Scott2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Scott2.mlmodel; sourceTree = "<group>"; };
+		69D1C852243F06600019B275 /* WeAR_TShirtCoreML.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WeAR_TShirtCoreML.mlmodel; sourceTree = "<group>"; };
 		69F7278822743FD4005BD8F5 /* BanknoteClassifier2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BanknoteClassifier2.mlmodel; sourceTree = "<group>"; };
 		F4FB444921A7923100939357 /* BanknoteRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanknoteRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FB444C21A7923100939357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,8 +76,10 @@
 		F4FB446021A7FE5000939357 /* MLModel */ = {
 			isa = PBXGroup;
 			children = (
-				69D1C852243F06600019B275 /* WeAR_TShirt.mlmodel */,
+				691E7BE8244EDBB900FB4DFD /* WeAR_Azure.mlmodel */,
+				69D1C852243F06600019B275 /* WeAR_TShirtCoreML.mlmodel */,
 				69F7278822743FD4005BD8F5 /* BanknoteClassifier2.mlmodel */,
+				69AE70D32453EDAC00928C9E /* Scott2.mlmodel */,
 			);
 			path = MLModel;
 			sourceTree = "<group>";
@@ -149,10 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69AE70D42453EDAC00928C9E /* Scott2.mlmodel in Sources */,
 				F4FB444D21A7923100939357 /* AppDelegate.swift in Sources */,
 				69F7278922743FD4005BD8F5 /* BanknoteClassifier2.mlmodel in Sources */,
 				F4FB445F21A7926C00939357 /* BanknoteRecognizerViewController.swift in Sources */,
-				69D1C853243F06610019B275 /* WeAR_TShirt.mlmodel in Sources */,
+				691E7BE9244EDBB900FB4DFD /* WeAR_Azure.mlmodel in Sources */,
+				69D1C853243F06610019B275 /* WeAR_TShirtCoreML.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,12 +26,14 @@ class BanknoteRecognizerViewController: UIViewController {
              */
             //let model = try VNCoreMLModel(for: BanknoteClassifier2().model)
 
-            let model = try VNCoreMLModel(for: WeAR_TShirt().model)
+//            let model = try VNCoreMLModel(for: WeAR_Azure().model)
 
-            let model2 = try VNCoreMLModel(for: WeAR_TShirt().model)
+            let model2 = try VNCoreMLModel(for: Scott2().model)
             
-            let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
+            let request = VNCoreMLRequest(model: model2, completionHandler: { [weak self] request, error in
                 self?.processClassifications(for: request, error: error)
+
+                
             })
            
             return request
